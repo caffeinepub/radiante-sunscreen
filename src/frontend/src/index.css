@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* RADIANTÈ Brand Palette */
+    --background: 0.982 0.012 75; /* #FFF8F0 warm off-white */
+    --foreground: 0.22 0 0; /* #2A2A2A dark text */
+    --card: 1 0 0; /* #FFFFFF */
+    --card-foreground: 0.22 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0 0;
+    --primary: 0.73 0.12 85; /* #D4AF37 gold */
+    --primary-foreground: 1 0 0; /* white */
+    --primary-hover: 0.67 0.11 83; /* #C6A332 gold hover */
+    --secondary: 0.96 0.01 75; /* light cream */
+    --secondary-foreground: 0.22 0 0;
+    --muted: 0.96 0.01 75;
+    --muted-foreground: 0.5 0 0; /* #6B6B6B */
+    --accent: 0.73 0.12 85;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.91 0.015 70; /* #E9E1D6 */
+    --input: 0.91 0.015 70;
+    --ring: 0.73 0.12 85;
+    --footer-bg: 0.27 0 0; /* #333333 */
+    --footer-text: 0.92 0.008 75; /* off-white */
+
+    /* chart fallbacks */
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", serif;
+  }
+}
